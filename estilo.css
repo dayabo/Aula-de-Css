@@ -1,0 +1,211 @@
+*{
+    
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: ghostwhite;
+    font-family:serif ;
+}
+header {
+   width:100%;
+   max-width: 3000px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content:space-around;
+   border-bottom: 2px solid white;
+}
+
+header ul {
+    display: flex;
+   
+}
+
+header ul li   {
+    display: flex;
+    padding: 10px 10px;
+    border-right: 2px solid rgb(125, 189, 5);
+}
+ 
+header ul li a:hover {
+    color:rgb(231, 229, 111);
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700 ;
+}
+li img {
+    width: 25px ;
+}
+
+body {
+   background: url(./big-data.jpg) no-repeat center center fixed;
+   background-size: cover;
+  
+}
+
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width:70%;
+    max-width: 3000px;
+    height: 100%;
+    align-items: flex-end;
+    
+
+}
+ .container .nome h1 {
+    font-size: 30px;
+    color: hsl(76, 95%, 38%);
+    
+ }
+ .container .nome h5 {
+    font-size: 20px;
+ }
+
+ #about p h3 {
+     margin: 0 auto;
+    
+ }
+ #seta {
+     font-size: 40px;
+     cursor: pointer;
+     animation: piscando 1s steps(5, start) infinite;
+ }
+ @keyframes piscando{
+     to{
+         visibility: hidden;
+     }
+ }
+ .rodar {
+     transform: rotate(180deg);
+     transition: 300ms;
+ }
+ .active {
+     display: block !important;
+ }
+
+ #animation {
+     transition: 300ms;
+ }
+ .nome img {
+     margin-top: 70px;
+     height: 200px;
+     height: 200px;
+     border-radius: 50%;
+     border: 5px solid white;
+ }
+ .form {
+     width: 60%;
+     margin: 0 auto;
+ }
+
+
+ .form div p {
+    font-size:20px;
+    color: yellow;
+    padding-top: 30px;
+    
+ }
+ 
+ .form input {
+    width: 50%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    text-align: center;
+    border:none;
+   
+}
+.form button {
+    width: 20%;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(252, 22, 6);
+    cursor: pointer;
+    border:none;
+    border-radius: 0px 5px 5px 0px;
+    margin: -5px;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+.form button:hover {
+    background-color: blue;
+    color: wheat;
+}
+
+@media only screen and (max-width:1000px){
+    .form {
+        width: 100%;
+    }
+    .form button {
+        width: 28%;
+    }
+    .form input {
+        width: 60%
+            
+    }
+    
+    #about p h3 {
+        text-align: justify;
+    
+    }
+    .form div p {
+        font-size: 20px;  
+    }
+    .container .nome h5 {
+        font-size: 15px;
+    }
+    .container .nome h1{
+        font-size: 24px;
+    }
+header {
+    display: block;
+}
+    header div img {
+        width: 350px;
+      display:grid;
+    
+}
+}
+
+@media only screen and (max-width:407px){
+  
+    header {
+        display: block;
+    }
+        header div img {
+            width: 250px;
+           display:grid; 
+        }
+        a {
+            font-size: 10px;
+           
+    }  
+    li img {
+        width: 13px ;
+    }   
+
+
+@media only screen and (max-width:280px){
+    header {
+        display: block;
+    }
+        header div img {
+            width: 200px;
+           display:grid; 
+        }
+        a {
+            font-size:  10px;
+           
+    }  
+    li img {
+        width: 10px ;
+    }   
+}
+}
