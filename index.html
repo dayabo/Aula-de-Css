@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>.: Dayane B.O.R. .:</title>
+</head>
+
+<body>
+
+    <header>
+       <div>
+         <img src="low-res-logo (2).png" alt= "logo">
+        </div>
+        <ul>
+            <li>
+               
+                <a target="_blank" href="https://github.com/dayabo"><img src="github.png"/>Github</a>
+              
+            </li>
+
+            <li>
+                
+                <a target="_blank" href="https://www.linkedin.com/in/dayane-barros-b630841b7/"><img src="linkedin.png"/>Linkedin</a>
+            </li>
+
+            <li>
+               
+                <a target="_blank" href="mailto:dayane.barrosoliveira@gmail.com"><img src="email.png"/>Email</a>
+
+            </li>
+
+            <li>
+              
+                <a target="_blank" href="https://wa.me/5514998949596"><img src="zap.png"/>whatsapp</a>
+    
+            </li>
+        </ul>
+    </header>
+
+    <Main>
+        <section class="container">
+         <div class="nome">
+             <img src="1627400117843.jpg"/>
+             <h1>Dayane B.O.Rocha</h1>
+             <h5>Dev Fulll Stack Junior</h5>
+         </div>
+
+         <div onclick="displaySeta()" id="seta">
+            <i id="animation" class="fas fa-caret-down"></i>
+         </div>
+
+         <div style="display: none;" id="about">
+             <p>
+                 <h3>Olá, sou Dayane tenho 28 anos moro no interior de São Paulo,
+                     estou em transição de carreira para área de programação.
+                     Mês passado ganhei uma bolsa do senai onde aprendi o
+                     curso básico de lógica de programação e este mês estou
+                     tendo uma outra oportunidade de estar entre os bolsista da Ambev Tech
+                     em parceria com Gama Academy.</h3>
+             </p>
+
+         </div>
+
+         <div class="form">
+             <div>
+                 <p>Se quiser me conhecer melhor mande msg :)</p>
+             </div>
+             <form action="">
+                 <input type="text" placeholder="Deixe seu email !!!">
+                 <button> Enviar </button>
+             </form>
+
+         </div>
+
+        </section>
+    </Main>
+<script>
+
+
+    function displaySeta() {
+        var seta = document.getElementById('animation');
+         seta.classList.toggle('rodar');
+         var display = document.getElementById('about');
+         display.classList.toggle('active');
+    }
+</script>
+
+
+</body>
+
+</html>
